@@ -1,0 +1,34 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<https://raw.githubusercontent.com/MarioMitrevski/MarioMitrevskiPersonalInfo/master/foaf.ttl>
+        a                     foaf:PersonalProfileDocument ;
+        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
+        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
+        foaf:maker            <https://raw.githubusercontent.com/MarioMitrevski/MarioMitrevskiPersonalInfo/master/foaf.ttl#me> ;
+        foaf:primaryTopic     <https://raw.githubusercontent.com/MarioMitrevski/MarioMitrevskiPersonalInfo/master/foaf.ttl#me> .
+
+<https://raw.githubusercontent.com/MarioMitrevski/MarioMitrevskiPersonalInfo/master/foaf.ttl#me>
+        a                       foaf:Person ;
+        foaf:family_name        "Mitrevski" ;
+        foaf:givenname          "Mario" ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://raw.githubusercontent.com/vavramovski/foaf/main/foaf.ttl?fbclid=IwAR16FkpBerg8GSfzl4FsUeSIdUbhRQJp8F10YOk_DkBJdZ9FfjB8Ijp747U> ;
+                                  foaf:mbox_sha1sum  "73cec11374fe00aab08560a2b0c86ab6c573ca81" ;
+                                  foaf:name          "Viktor"
+                                ] ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://raw.githubusercontent.com/PavelJankoski/myInfoFOAF/master/foaf.ttl> ;
+                                  foaf:mbox_sha1sum  "1969f51d8c8db62838f7b4d3e916d12e7d050202" ;
+                                  foaf:name          "Pavel"
+                                ] ;
+        foaf:mbox_sha1sum       "d45eb81e0a6d696cd254ceb7367b5c6b57c6a7cf" ;
+        foaf:name               "Mario Mitrevski" ;
+        foaf:nick               "Varga" ;
+        foaf:phone              <tel:+38978380852> ;
+        foaf:schoolHomepage     <https://www.finki.ukim.mk/> ;
+        foaf:title              "Mr" ;
+        foaf:workInfoHomepage   <https://en.wikipedia.org/wiki/Android_software_development> ;
+        foaf:workplaceHomepage  <https://www.intertec.io/> .
